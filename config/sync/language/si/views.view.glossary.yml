@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      fields:
+        title:
+          label: මාතෘකාව
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'පිටුවක දිස්‌වන ඒකක'

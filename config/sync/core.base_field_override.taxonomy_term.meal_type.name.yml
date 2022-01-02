@@ -1,0 +1,18 @@
+uuid: a3d88104-0123-4d97-a915-c95e4ac6472f
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.meal_type
+id: taxonomy_term.meal_type.name
+field_name: name
+entity_type: taxonomy_term
+bundle: meal_type
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,5 @@
+# migration group
+# These details are needed while running the migration
+id: test_migration
+label: test Migration
+description: Migrating XML data

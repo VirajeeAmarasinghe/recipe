@@ -1,0 +1,31 @@
+uuid: 61cd32b5-18a7-4006-b74d-a35ed057e112
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.news_feeds
+    - field.storage.node.feeds_item
+    - node.type.newsapi
+  module:
+    - feeds
+id: node.newsapi.feeds_item
+field_name: feeds_item
+entity_type: node
+bundle: newsapi
+label: 'Feeds item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:feeds_feed'
+  handler_settings:
+    target_bundles:
+      news_feeds: news_feeds
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: feeds_item

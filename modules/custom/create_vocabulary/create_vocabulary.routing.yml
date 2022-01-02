@@ -1,0 +1,49 @@
+create_vocabulary.display_vocabularies:
+  path: '/admin/taxonomy/vocabularies/index'
+  defaults: 
+    _controller: 'Drupal\create_vocabulary\Controller\VocabularyController::index'
+    _title: 'All Vocabularies'
+  requirements: 
+    _permission: 'access content'
+
+create_vocabulary.add_vocabulary:
+  path: '/admin/taxonomy/vocabularies/add'
+  defaults: 
+    _form: 'Drupal\create_vocabulary\Form\VocabularyAddEditForm'
+    _title: 'Add / Edit Vocabulary'
+  requirements: 
+    _permission: 'TRUE'
+
+create_vocabulary.show_vocabulary:
+  path: '/admin/taxonomy/vocabularies/{id}/show'
+  defaults:
+    _controller: 'Drupal\create_vocabulary\Controller\VocabularyController::show'
+    _title: 'Show Vocabularay'
+  requirements: 
+    _permission: 'access content'
+  
+create_vocabulary.delete_vocabulary:
+  path: '/admin/taxonomy/vocabularies/{id}/delete'
+  defaults: 
+    _form: 'Drupal\create_vocabulary\Form\VocabularyDeleteForm'
+    _title: 'Delete Vocabulory'
+  requirements: 
+    _access: 'TRUE'
+
+create_term.add_term:
+  path: '/admin/taxonomy/{vocabulary_id}/terms'
+  defaults: 
+    _form: Drupal\create_vocabulary\Form\TermAddEditForm
+    _title: 'Add / Edit Term'
+  requirements:
+    _permission: 'TRUE'
+
+create_term.delete_term:
+  path: '/admin/taxonomy/{vocabulary_id}/{id}/terms'
+  defaults: 
+    _form: Drupal\create_vocabulary\Form\TermDeleteForm
+    _title: 'Delete Term'
+  requirements:
+    _permission: 'TRUE'
+
+  

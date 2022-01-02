@@ -1,0 +1,6 @@
+name: 'Drupal UP JSON API'
+description: 'A simple JSON api example'
+package: custom
+core: 8.x
+type: module
+core_version_requirement: ^8 || ^9

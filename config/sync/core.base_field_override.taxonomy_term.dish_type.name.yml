@@ -1,0 +1,18 @@
+uuid: 59ecb529-81cc-4231-aab7-c40ea47bc657
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dish_type
+id: taxonomy_term.dish_type.name
+field_name: name
+entity_type: taxonomy_term
+bundle: dish_type
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

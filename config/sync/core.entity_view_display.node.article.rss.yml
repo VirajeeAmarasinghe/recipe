@@ -1,0 +1,45 @@
+uuid: 20e53049-957d-4a73-b35d-22c723a66115
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.feeds_item
+    - field.field.node.article.field_cooking_style
+    - field.field.node.article.field_diet_health
+    - field.field.node.article.field_dish_type
+    - field.field.node.article.field_image
+    - field.field.node.article.field_ingredient
+    - field.field.node.article.field_meal_type
+    - field.field.node.article.field_regional
+    - field.field.node.article.field_spice_indicator
+    - field.field.node.article.field_tags
+    - node.type.article
+  module:
+    - user
+_core:
+  default_config_hash: 2rIr6K5Q0UQ9khg0zE_CK-PtJH76UL-BDDZcZnZzwCc
+id: node.article.rss
+targetEntityType: node
+bundle: article
+mode: rss
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  body: true
+  comment: true
+  feeds_item: true
+  field_cooking_style: true
+  field_diet_health: true
+  field_dish_type: true
+  field_image: true
+  field_ingredient: true
+  field_meal_type: true
+  field_regional: true
+  field_spice_indicator: true
+  field_tags: true
+  langcode: true

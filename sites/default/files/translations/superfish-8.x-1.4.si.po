@@ -1,0 +1,24 @@
+# Sinhala translation of Superfish (8.x-1.4)
+# Copyright (c) 2020 by the Sinhala translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Superfish (8.x-1.4)\n"
+"POT-Creation-Date: 2020-05-25 20:46+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Sinhala\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "User interface"
+msgstr "පරිශීලක අතුරු මුහුණත"
+msgid "enabled"
+msgstr "සක්‍රීය කලා"
+msgid "disabled"
+msgstr "සක්‍රීය නොවන"
+msgid "Disable"
+msgstr "අක්‍රීයකරන්න"
+msgid "More"
+msgstr "තව"

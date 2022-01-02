@@ -1,0 +1,7 @@
+name: 'Create Vocabulary'
+description: 'Create Vocabulary:Custom-made vocabulary:Taxonomy'
+package: custom
+type: 'module'
+core: 8.x
+core_version_requirement: ^8 || ^9
+

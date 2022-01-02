@@ -1,0 +1,19 @@
+uuid: b4b7b7e5-5c2a-4165-8cb5-2cef288a80c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_path
+    - node.type.character
+id: node.character.field_image_path
+field_name: field_image_path
+entity_type: node
+bundle: character
+label: 'Image path'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,17 @@
+uuid: 7a672ad2-338e-4e20-856a-97951e4c2262
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Recipe
+type: recipe
+description: ''
+help: 'Fill up the fields please'
+new_revision: true
+preview_mode: 1
+display_submitted: false

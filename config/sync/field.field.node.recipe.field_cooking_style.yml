@@ -1,0 +1,21 @@
+uuid: 1cdbe7b5-3b9a-45ee-85b0-bad44c03d7be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cooking_style
+    - node.type.recipe
+id: node.recipe.field_cooking_style
+field_name: field_cooking_style
+entity_type: node
+bundle: recipe
+label: 'Cooking Style'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

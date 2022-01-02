@@ -1,0 +1,22 @@
+uuid: bb884c6c-8950-4bb7-975b-75b9475eb149
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.rss_field
+id: node.rss_field.promote
+field_name: promote
+entity_type: node
+bundle: rss_field
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

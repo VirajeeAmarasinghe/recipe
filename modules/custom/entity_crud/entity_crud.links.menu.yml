@@ -1,0 +1,6 @@
+entity_crud.demo:
+  title: 'ENTITY CRUD'
+  description: 'ENTITY CRUD Operation'
+  parent: main
+  menu_name: main
+  route_name: entity_crud.display_data

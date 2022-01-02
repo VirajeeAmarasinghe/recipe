@@ -1,0 +1,18 @@
+uuid: 0bd0adf4-66d1-4220-b7b8-8236bab832c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.spice_indicator
+id: taxonomy_term.spice_indicator.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: spice_indicator
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

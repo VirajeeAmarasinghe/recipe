@@ -1,0 +1,18 @@
+uuid: d879b7e4-fa92-4a06-80c0-35e4ba5dd4ae
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.testing-new
+id: taxonomy_term.testing-new.name
+field_name: name
+entity_type: taxonomy_term
+bundle: testing-new
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,11 @@
+display:
+  default:
+    display_title: பொதுஇருப்பு
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: மீளமைக்க
+  block_1:
+    display_title: கட்டம்
+  page_1:
+    display_title: பக்கம்

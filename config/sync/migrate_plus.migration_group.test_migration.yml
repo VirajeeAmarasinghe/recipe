@@ -1,0 +1,12 @@
+uuid: 14b83707-9322-4663-a818-ce3cf05bd8f9
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: koZ702cpEExR-st_LJiJFa2ITiBsl6558Z7Bfck6DHY
+id: test_migration
+label: 'test Migration'
+description: 'Migrating XML data'
+source_type: null
+module: null
+shared_configuration: null

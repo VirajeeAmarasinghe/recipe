@@ -1,0 +1,31 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: மீளமைக்க
+      pager:
+        options:
+          tags:
+            previous: '< முன்'
+            next: 'அடுத்தது >'
+            first: '<< தொடக்கம்'
+            last: 'முடிவு >>'
+      fields:
+        title:
+          label: தலைப்பு
+        type:
+          label: வகை
+        name:
+          label: எழுத்தாளர்
+        operations:
+          label: செயல்பாடுகள்
+      filters:
+        title:
+          expose:
+            label: தலைப்பு
+        type:
+          expose:
+            label: வகை
+  page_1:
+    display_title: பக்கம்

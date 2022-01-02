@@ -1,0 +1,26 @@
+<?php
+/**
+ * @file
+ * Contains events_and_hooks.module
+*/
+use \Drupal\events_and_hooks\Event\UserLoginEvent;
+/**
+ * implements hook_user_login()
+ */
+function events_and_hooks_user_login($account){
+    $calculator = \Drupal::service('my.events.and.hooks.service');
+    $messenger = \Drupal::messenger();
+    $messenger->addMessage(
+        "2 + 4 = " . $calculator->add(2, 4)
+    );
+
+    // Instantiate our event.
+    $event = new UserLoginEvent($account);
+
+    // Get the event_dispatcher server and dispatch the event
+    $event_dispatcher = \Drupal::service('event_dispatcher');
+    
+    // We are dispatching our custom event when an user is logged into Drupal.
+    $event_dispatcher->dispatch(UserLoginEvent::EVENT_NAME, $event);
+}
+?>

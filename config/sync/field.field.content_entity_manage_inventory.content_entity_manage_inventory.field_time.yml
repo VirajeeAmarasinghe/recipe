@@ -1,0 +1,21 @@
+uuid: 10e30db4-ff23-4185-b498-cc36a6398455
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.content_entity_manage_inventory.field_time
+  module:
+    - manage_inventory
+    - time_picker
+id: content_entity_manage_inventory.content_entity_manage_inventory.field_time
+field_name: field_time
+entity_type: content_entity_manage_inventory
+bundle: content_entity_manage_inventory
+label: Time
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: time_picker

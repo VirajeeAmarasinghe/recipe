@@ -1,0 +1,6 @@
+services:
+  pagination:
+    class: Drupal\pagination\Pagination
+    arguments: ['@pager.manager']
+
+

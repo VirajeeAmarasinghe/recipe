@@ -1,0 +1,18 @@
+uuid: 935b541d-2d2c-447b-bce1-42c6056ffb87
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.spice_indicator
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.spice_indicator
+target_entity_type_id: taxonomy_term
+target_bundle: spice_indicator
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,69 @@
+<?php
+//hook_schema
+function user_crud_schema(){
+    $schema['user_crud_table'] = array(
+        'fields' => array(
+           'id' => array(
+               'type' => 'serial',
+               'unsigned' => TRUE,
+               'not null' => TRUE
+           ),
+           'first_name' => array( 
+               'type' => 'varchar',
+               'length' => 32,
+               'not null' => TRUE,
+               'default' => ''
+           ),
+           'last_name' => array(
+               'type' => 'varchar',
+               'length' => 255,
+               'not null' => TRUE,
+               'default' => ''
+           ),
+           'email' => array(
+               'type' => 'varchar',
+               'length' => 255,
+               'not null' => TRUE,
+               'default' => ''
+           ),
+           'phone' => array(
+               'type' => 'varchar',
+               'length' => 255,
+               'not null' => TRUE,
+               'default' => ''
+           ),
+           'dob' => array(
+                'type' => 'varchar',
+		        'mysql_type' => 'date',
+                'not null' => TRUE,
+                'default' => date('Y-m-d')
+           ),
+           'gender' => array(
+               'type' => 'char',
+               'not null' => FALSE,
+               'default' => 'M'
+           ),
+           'fid' => array(
+               'type' => 'int',
+               'length' => 20,
+               'not null' => FALSE
+           ),
+           'select' => array(
+               'type' => 'varchar',
+               'length' => 255,
+               'not null' => TRUE,
+               'default' => ''
+           ),
+           'message' => array(
+               'type' => 'varchar',
+               'length' => 255,
+               'not null' => TRUE,
+               'default' => ''
+           )
+        ),
+        'primary key' => array('id')
+    );
+
+    return $schema;
+}
+?>

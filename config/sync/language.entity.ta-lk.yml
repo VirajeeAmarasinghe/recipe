@@ -1,0 +1,9 @@
+uuid: e673b02d-7afd-4745-8481-4cf4230a5e00
+langcode: en
+status: true
+dependencies: {  }
+id: ta-lk
+label: 'Tamil, Sri Lanka'
+direction: ltr
+weight: 2
+locked: false

@@ -1,0 +1,16 @@
+name: test migration
+type: module 
+description: Migrating data from the csv files.
+core_version_requirement: ^8 || ^9
+package: Migration 
+dependencies: 
+  - drupal:migrate_source_csv
+  - drupal:migrate_plus
+  - drupal:migrate_tools
+config_devel:
+  install:
+    # install migration group
+    - migrate_plus.migration_group.test_migration 
+    - migrate_plus.migration.test_migration_sessions
+    - migrate_plus.migration.test_migration_paper
+    - migrate_plus.migration.test_migration_user

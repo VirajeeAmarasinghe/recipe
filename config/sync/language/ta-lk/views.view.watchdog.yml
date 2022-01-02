@@ -1,0 +1,29 @@
+display:
+  default:
+    display_title: பொதுஇருப்பு
+    display_options:
+      fields:
+        type:
+          label: வகை
+        timestamp:
+          label: திகதி
+        message:
+          label: தகவல்
+        name:
+          label: பயனாளர்
+        link:
+          label: செயல்பாடுகள்
+      exposed_form:
+        options:
+          submit_button: வடிகட்டி
+          reset_button_label: மீளமைக்க
+      empty:
+        area:
+          admin_label: 'எந்தவொரு பதிகைத் தகவலும் இல்லை.'
+          content: 'எந்தவொரு பதிகைத் தகவலும் இல்லை.'
+      filters:
+        type:
+          expose:
+            label: வகை
+  page:
+    display_title: பக்கம்

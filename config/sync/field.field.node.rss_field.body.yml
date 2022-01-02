@@ -1,0 +1,23 @@
+uuid: 6ebb071e-28e1-4a99-b446-e9776c251849
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.rss_field
+  module:
+    - text
+id: node.rss_field.body
+field_name: body
+entity_type: node
+bundle: rss_field
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

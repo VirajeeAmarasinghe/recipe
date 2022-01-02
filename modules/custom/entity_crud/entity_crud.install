@@ -1,0 +1,37 @@
+<?php
+/**
+ * Implements hook_schema().
+ */
+function entity_crud_schema() {
+
+  $schema = array();
+
+  $schema['entity_crud_table'] = array(
+    'description' => 'The base table for the Project entity',
+    'fields' => array(
+      'id' => array(
+        'description' => 'Primary key of the Project entity',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+      ),
+      'name' => array(
+        'description' => 'Project name.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => FALSE,
+      ),
+      'description' => array(
+        'description' => 'Project description.',
+        'type' => 'text',
+        'size' => 'big',
+        'not null' => FALSE,
+        'default' => NULL
+      )
+    ),
+    'primary key' => array('id'),
+  );
+
+  return $schema;
+} 
+?>

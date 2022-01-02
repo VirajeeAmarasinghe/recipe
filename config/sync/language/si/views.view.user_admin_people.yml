@@ -1,0 +1,27 @@
+label: පරිශ්‍රීලකයා
+display:
+  default:
+    display_options:
+      title: පරිශ්‍රීලකයා
+      fields:
+        name:
+          label: 'පරිශීලක නාමය'
+        status:
+          label: තත්වය
+        operations:
+          label: මෙහෙයුම්
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'පිටුවක දිස්‌වන ඒකක'
+      filters:
+        status:
+          group_info:
+            label: තත්වය
+      use_more_text: තවත්
+  page_1:
+    display_options:
+      menu:
+        title: ලැයිස්තුව
+      tab_options:
+        title: පරිශ්‍රීලකයා

@@ -1,0 +1,39 @@
+display:
+  default:
+    display_options:
+      fields:
+        subject:
+          label: කාරණය
+        operations:
+          label: මෙහෙයුම්
+      pager:
+        options:
+          tags:
+            next: 'ඊලඟ ›'
+            previous: '‹ පෙර'
+            first: '« ප්‍රථම'
+            last: 'අන්තිම »'
+          expose:
+            items_per_page_label: 'පිටුවක දිස්‌වන ඒකක'
+      filters:
+        subject:
+          expose:
+            label: කාරණය
+        langcode:
+          expose:
+            label: භාෂාව
+      use_more_text: තවත්
+  page_unapproved:
+    display_options:
+      fields:
+        subject:
+          label: කාරණය
+        operations:
+          label: මෙහෙයුම්
+      filters:
+        subject:
+          expose:
+            label: කාරණය
+        langcode:
+          expose:
+            label: භාෂාව

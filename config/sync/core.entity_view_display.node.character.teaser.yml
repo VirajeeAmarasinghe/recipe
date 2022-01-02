@@ -1,0 +1,27 @@
+uuid: 139e8d73-5af4-4823-9c16-c2936dbedee7
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.character.feeds_item
+    - field.field.node.character.field_actor
+    - field.field.node.character.field_image_path
+    - node.type.character
+  module:
+    - user
+id: node.character.teaser
+targetEntityType: node
+bundle: character
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  field_actor: true
+  field_image_path: true
+  langcode: true

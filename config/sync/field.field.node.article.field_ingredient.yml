@@ -1,0 +1,29 @@
+uuid: 476ca125-22ba-4d24-8f75-82ad053ce2f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ingredient
+    - node.type.article
+    - taxonomy.vocabulary.ingredient
+id: node.article.field_ingredient
+field_name: field_ingredient
+entity_type: node
+bundle: article
+label: Ingredient
+description: Ingredient
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ingredient: ingredient
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

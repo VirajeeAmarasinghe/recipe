@@ -1,0 +1,14 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function cat_facts_theme() {
+  return [
+    'cat_facts_custom_theme' => [
+      'variables' => [
+        'items' => NULL, 
+      ],
+    ],
+  ];
+}
+?>

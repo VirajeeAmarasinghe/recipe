@@ -1,0 +1,26 @@
+display:
+  default:
+    display_options:
+      fields:
+        filename:
+          label: නම
+        status:
+          label: තත්වය
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'පිටුවක දිස්‌වන ඒකක'
+      filters:
+        status:
+          expose:
+            label: තත්වය
+  page_2:
+    display_options:
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'පිටුවක දිස්‌වන ඒකක'
+      arguments:
+        fid:
+          exception:
+            title: සියල්ල

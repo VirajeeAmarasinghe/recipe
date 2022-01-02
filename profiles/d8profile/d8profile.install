@@ -1,0 +1,60 @@
+<?php
+
+use Drupal\user\Entity\User;
+use Drupal\taxonomy\Entity\Vocabulary;
+use Drupal\taxonomy\Entity\Term;
+
+/**
+ * Implements hook_install()
+ * 
+ * Perform actions to set up the site for this profile
+ *
+ * @return void
+ */
+function d8profile_install() {
+    // First, do everything in standard profile
+    include_once DRUPAL_ROOT.'/core/profiles/standard/standard.install';
+    standard_install();
+
+    // Set front page to "node".
+    \Drupal::configFactory()->getEditable('system.site')->set('page.front', '/home')->save();
+
+    //assign user 1 the 'administrator' role
+    $user = User::load(1);
+    $user->roles[] = 'administrator';
+    $user->save();
+
+    //Enable the admin theme
+    \Drupal::configFactory()->getEditable('node.settings')->set('use_admin_theme', TRUE)->save();
+
+    // Creating users with developer role
+    $user_add = User::create();
+    $user_add->setUsername('Tom');
+    $user_add->setEmail('tom@example.com');
+    $user_add->setPassword(user_password());
+    $user_add->enforceIsNew();
+    $user_add->activate();
+    $user_add->roles[] = 'developer';
+    $user_save = $user_add->save();
+
+    $user_add = User::create();
+    $user_add->setUsername('Harry');
+    $user_add->setEmail('harry@example.com');
+    $user_add->setPassword(user_password());
+    $user_add->enforceIsNew();
+    $user_add->activate();
+    $user_add->roles[] = 'developer';
+    $user_save = $user_add->save();
+
+    $vocabulary = Vocabulary::create(array(
+        'vid' => 'example_profile_vocabulary',
+        'name' => 'example profile vocabulary'
+    ))->save();
+
+    $term = Term::create(array(
+        'parent' => array(),
+        'name' => 'example term',
+        'vid' => 'example_profile_vocabulary'
+    ))->save();
+}
+?>

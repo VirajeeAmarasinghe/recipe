@@ -1,0 +1,15 @@
+d8profile.homepagecontent:
+  path: 'home'
+  defaults: 
+    _controller: 'Drupal\d8profile\Controller\AboutUsController::homePageContent'
+    _title: 'About Us'
+  requirements:
+    _permission: 'access content'
+
+d8profile.recipefeedbackform:
+  path: '/recipe-feedback'
+  defaults:
+    _form: '\Drupal\d8profile\Form\RecipeFeedbackForm'
+    _title: 'Feedback Form'
+  requirements:
+    _permission: 'access content'

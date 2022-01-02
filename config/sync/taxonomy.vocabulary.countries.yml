@@ -1,0 +1,8 @@
+uuid: 94386d57-79bc-46d7-ba88-3df960e4f90c
+langcode: en
+status: true
+dependencies: {  }
+name: countries
+vid: countries
+description: 'different types of countries'
+weight: 0

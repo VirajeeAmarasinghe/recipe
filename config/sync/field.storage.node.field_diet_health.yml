@@ -1,0 +1,20 @@
+uuid: a243727d-21c2-4f84-83cb-f2c37ea21cc7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_diet_health
+field_name: field_diet_health
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

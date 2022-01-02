@@ -1,0 +1,8 @@
+uuid: 2fa4afa0-9ec9-4f8c-a56d-dd12cd2631b1
+langcode: en
+status: true
+dependencies: {  }
+name: 'Meal Type'
+vid: meal_type
+description: 'Meal Type'
+weight: 0

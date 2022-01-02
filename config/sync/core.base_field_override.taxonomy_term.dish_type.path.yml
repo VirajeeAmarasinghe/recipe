@@ -1,0 +1,20 @@
+uuid: 0d770c98-1a6e-45f1-81f0-23501fa61766
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dish_type
+  module:
+    - path
+id: taxonomy_term.dish_type.path
+field_name: path
+entity_type: taxonomy_term
+bundle: dish_type
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

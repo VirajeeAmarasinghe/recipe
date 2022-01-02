@@ -1,0 +1,25 @@
+uuid: 30225aa5-a41c-465c-8873-a1dbdcbcbc79
+langcode: en
+status: true
+dependencies:
+  module:
+    - posts
+    - system
+  theme:
+    - bartik
+id: posts
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: posts_block
+settings:
+  id: posts_block
+  label: Posts
+  provider: posts
+  label_display: visible
+visibility:
+  request_path:
+    id: request_path
+    pages: /posts
+    negate: false

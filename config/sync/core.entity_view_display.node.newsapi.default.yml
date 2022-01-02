@@ -1,0 +1,70 @@
+uuid: b14d8bb7-7035-41ad-9633-7dd189479f14
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.newsapi.body
+    - field.field.node.newsapi.feeds_item
+    - field.field.node.newsapi.field_author
+    - field.field.node.newsapi.field_content
+    - field.field.node.newsapi.field_path_to_image
+    - field.field.node.newsapi.field_title
+    - node.type.newsapi
+  module:
+    - link
+    - text
+    - user
+id: node.newsapi.default
+targetEntityType: node
+bundle: newsapi
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_author:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_content:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_path_to_image:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_title:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  feeds_item: true
+  langcode: true

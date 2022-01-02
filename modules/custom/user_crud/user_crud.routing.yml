@@ -1,0 +1,34 @@
+user_crud.display_data:
+  path: '/admin/user_crud/index'
+  defaults: 
+    _controller: 'Drupal\user_crud\Controller\DisplayTableController::index'
+    _title: 'All Data'
+  requirements: 
+    _permission: 'access content'
+
+user_crud.show_data:
+  path: '/admin/user_crud/{id}/show'
+  defaults: 
+    _controller: 'Drupal\user_crud\Controller\MyDataController::show'
+    _title: 'Show Data'
+  requirements: 
+    _permission: 'access content'
+
+user_crud.delete_form:
+  path: '/admin/user_crud/{id}/delete'
+  defaults: 
+    _form: 'Drupal\user_crud\Form\DeleteForm'
+    _title: 'DeleteForm'
+  requirements: 
+    _access: 'TRUE'
+    # _role: 'administrator+admin'
+
+user_crud.add_form:
+  path: '/admin/user_crud/add'
+  defaults:
+    _form: 'Drupal\user_crud\Form\UserAddEditForm'
+    _title: 'Add / Edit Data'
+  requirements: 
+    _permission: 'TRUE'
+    # _role: 'administrator+admin'
+

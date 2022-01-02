@@ -1,0 +1,11 @@
+uuid: 1ec16ba9-a27e-4198-b712-8e71df94b5b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.newsapi
+id: node.newsapi
+target_entity_type_id: node
+target_bundle: newsapi
+default_langcode: site_default
+language_alterable: false

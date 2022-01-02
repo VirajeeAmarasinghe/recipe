@@ -1,0 +1,18 @@
+uuid: 953c224b-6363-452f-b8fe-e0c2bb933dd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.testing-new
+id: taxonomy_term.testing-new.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: testing-new
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

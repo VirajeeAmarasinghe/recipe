@@ -1,0 +1,11 @@
+uuid: 8dd117a5-d4ee-466a-a140-2cdd5f614dd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.rss_field
+id: node.rss_field
+target_entity_type_id: node
+target_bundle: rss_field
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,5 @@
+tips:
+  block-region:
+    label: 'Région du Bloc'
+  configure-block:
+    label: 'Configurer le bloc'

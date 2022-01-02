@@ -1,0 +1,18 @@
+uuid: 65c0d78d-e1b2-480b-82c7-a0800030e99b
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.regional
+id: taxonomy_term.regional.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: regional
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

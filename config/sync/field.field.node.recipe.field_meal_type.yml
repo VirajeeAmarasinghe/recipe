@@ -1,0 +1,29 @@
+uuid: e4e5585d-48e5-4d4b-8874-1d6fb4dc07a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meal_type
+    - node.type.recipe
+    - taxonomy.vocabulary.meal_type
+id: node.recipe.field_meal_type
+field_name: field_meal_type
+entity_type: node
+bundle: recipe
+label: 'Meal Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      meal_type: meal_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: b7af0b84-99aa-4932-8e42-83cd849b1773
+langcode: en
+status: true
+dependencies: {  }
+name: 'Cooking Style'
+vid: cooking_style
+description: 'Cooking Style'
+weight: 0

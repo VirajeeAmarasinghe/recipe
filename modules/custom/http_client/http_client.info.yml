@@ -1,0 +1,6 @@
+name: 'Custom Http Client'
+description: 'Custom Guzzle Http Client'
+package: custom
+core: 8.x
+type: module
+core_version_requirement: ^8 || ^9

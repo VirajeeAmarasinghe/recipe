@@ -1,0 +1,24 @@
+uuid: b90a6311-ba66-4bd5-bfb5-1120a4f62de0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_t
+    - node.type.recipe
+  module:
+    - time_picker
+id: node.recipe.field_t
+field_name: field_t
+entity_type: node
+bundle: recipe
+label: 'Time to cook'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    time: '00:00'
+    locate: null
+default_value_callback: ''
+settings: {  }
+field_type: time_picker

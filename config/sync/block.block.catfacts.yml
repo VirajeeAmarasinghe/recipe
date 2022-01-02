@@ -1,0 +1,25 @@
+uuid: 721c9247-a556-4e30-a9e1-dfd79c6f5e4c
+langcode: en
+status: true
+dependencies:
+  module:
+    - cat_facts
+    - system
+  theme:
+    - bartik
+id: catfacts
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: cat_facts_block
+settings:
+  id: cat_facts_block
+  label: 'Cat Facts'
+  provider: cat_facts
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /cat-facts
+    negate: false

@@ -1,0 +1,19 @@
+uuid: 7a3df314-d5a9-4ec1-87a6-c63a969d5858
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_serves
+    - node.type.recipe
+id: node.recipe.field_serves
+field_name: field_serves
+entity_type: node
+bundle: recipe
+label: Serves
+description: 'How many people can be served from the quantity of food this recipe creates?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,17 @@
+display:
+  default:
+    display_title: பொதுஇருப்பு
+    display_options:
+      fields:
+        filename:
+          label: பெயர்
+        status:
+          label: நிலை
+      exposed_form:
+        options:
+          submit_button: வடிகட்டி
+          reset_button_label: மீளமைக்க
+      filters:
+        status:
+          expose:
+            label: நிலை

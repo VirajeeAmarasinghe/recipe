@@ -1,0 +1,8 @@
+uuid: ff477c50-e7f2-479c-9a9b-1a17885c1561
+langcode: en
+status: true
+dependencies: {  }
+name: Ingredients
+vid: ingredients
+description: ''
+weight: 0

@@ -1,0 +1,20 @@
+uuid: 203b9ad7-7657-4fbe-8fd1-dec93057f462
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.diet_health
+  module:
+    - path
+id: taxonomy_term.diet_health.path
+field_name: path
+entity_type: taxonomy_term
+bundle: diet_health
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

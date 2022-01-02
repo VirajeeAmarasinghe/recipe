@@ -1,0 +1,106 @@
+uuid: effbb525-dc36-47d8-91b3-b42f3881fcd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.character.feeds_item
+    - field.field.node.character.field_actor
+    - field.field.node.character.field_image_path
+    - node.type.character
+  module:
+    - feeds_ex
+    - node
+label: 'Breaking Bad Characters'
+id: breaking_bad_characters
+description: 'custom feed to ingest the 3rd party JSON from Breaking Bad API'
+help: ''
+import_period: 3600
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: true
+  fallback_hub: ''
+  request_timeout: 30
+parser: jsonpath
+parser_configuration:
+  sources:
+    name:
+      value: name
+      label: name
+    char_id:
+      value: char_id
+      label: char_id
+    img:
+      value: img
+      label: img
+    portrayed:
+      value: portrayed
+      label: portrayed
+  context:
+    value: '$.*'
+  source_encoding:
+    - auto
+  display_errors: false
+  debug_mode: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: character
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  name:
+    value: name
+    label: name
+    machine_name: name
+  char_id:
+    value: char_id
+    label: char_id
+    machine_name: char_id
+  img:
+    value: img
+    label: img
+    machine_name: img
+  portrayed:
+    value: portrayed
+    label: portrayed
+    machine_name: portrayed
+mappings:
+  -
+    target: title
+    map:
+      value: name
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: feeds_item
+    map:
+      url: ''
+      guid: char_id
+    settings: {  }
+    unique:
+      guid: '1'
+  -
+    target: field_image_path
+    map:
+      value: img
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_actor
+    map:
+      value: portrayed
+    settings:
+      language: null
+    unique: {  }

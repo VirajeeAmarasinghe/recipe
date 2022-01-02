@@ -1,0 +1,25 @@
+uuid: 13dc6e38-26a1-4652-8267-2362b757c8c9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:83b67e9a-5427-430b-9321-fc872a71c9c4'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: welcometomyrecipeblock
+theme: bartik
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'block_content:83b67e9a-5427-430b-9321-fc872a71c9c4'
+settings:
+  id: 'block_content:83b67e9a-5427-430b-9321-fc872a71c9c4'
+  label: 'Welcome to my recipe website!'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

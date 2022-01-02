@@ -1,0 +1,7 @@
+events_and_hooks.demo_form:
+  path: 'demo-form'
+  defaults:
+    _form: '\Drupal\events_and_hooks\Form\DemoForm'
+    _title: 'Demo form'
+  requirements:
+    _permission: 'access administration pages'

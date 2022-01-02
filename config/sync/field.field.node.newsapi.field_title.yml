@@ -1,0 +1,21 @@
+uuid: 0e07c597-1f93-4410-9873-99802b4f6127
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title
+    - node.type.newsapi
+  module:
+    - text
+id: node.newsapi.field_title
+field_name: field_title
+entity_type: node
+bundle: newsapi
+label: title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

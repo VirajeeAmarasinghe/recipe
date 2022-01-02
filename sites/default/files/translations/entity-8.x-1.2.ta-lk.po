@@ -1,0 +1,24 @@
+# Tamil, Sri Lanka translation of Entity API (8.x-1.2)
+# Copyright (c) 2020 by the Tamil, Sri Lanka translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Entity API (8.x-1.2)\n"
+"POT-Creation-Date: 2020-11-26 14:49+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Tamil, Sri Lanka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Delete"
+msgstr "நீக்குக"
+msgid "Operations"
+msgstr "செயல்பாடுகள்"
+msgid "Edit"
+msgstr "தொகுக்க"
+msgid "View"
+msgstr "நோக்குக"
+msgid "Create new revision"
+msgstr "புதிய மீட்டலை உருவாக்குக"

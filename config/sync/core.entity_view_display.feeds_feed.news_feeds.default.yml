@@ -1,0 +1,90 @@
+uuid: 65141908-ab98-4dbf-aa02-0dc69e0fdcc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.news_feeds
+    - field.field.feeds_feed.news_feeds.field_author
+    - field.field.feeds_feed.news_feeds.field_content
+    - field.field.feeds_feed.news_feeds.field_description
+    - field.field.feeds_feed.news_feeds.field_title
+    - field.field.feeds_feed.news_feeds.field_urltoimage
+  module:
+    - feeds
+    - link
+    - text
+    - user
+id: feeds_feed.news_feeds.default
+targetEntityType: feeds_feed
+bundle: news_feeds
+mode: default
+content:
+  field_author:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_content:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_title:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_urltoimage:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  imported:
+    type: timestamp_ago
+    label: inline
+    settings:
+      future_format: '@interval hence'
+      past_format: '@interval ago'
+      granularity: 2
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  next:
+    type: timestamp
+    label: inline
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  source:
+    type: feeds_uri_link
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: -3
+    region: content
+hidden: {  }

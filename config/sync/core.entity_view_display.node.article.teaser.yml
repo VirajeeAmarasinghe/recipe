@@ -1,0 +1,72 @@
+uuid: c78ac4bf-3182-4372-beec-94986e17fdc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.feeds_item
+    - field.field.node.article.field_cooking_style
+    - field.field.node.article.field_diet_health
+    - field.field.node.article.field_dish_type
+    - field.field.node.article.field_image
+    - field.field.node.article.field_ingredient
+    - field.field.node.article.field_meal_type
+    - field.field.node.article.field_regional
+    - field.field.node.article.field_spice_indicator
+    - field.field.node.article.field_tags
+    - image.style.large
+    - node.type.article
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: 4NcL2hSQZBpJbYtNuh5jC6kyQTcAc1m5bQpTegEWEso
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 100
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: large
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  comment: true
+  feeds_item: true
+  field_cooking_style: true
+  field_diet_health: true
+  field_dish_type: true
+  field_ingredient: true
+  field_meal_type: true
+  field_regional: true
+  field_spice_indicator: true
+  langcode: true

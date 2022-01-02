@@ -1,0 +1,26 @@
+display:
+  default:
+    display_options:
+      pager:
+        options:
+          tags:
+            previous: '‹ පෙර'
+            next: 'ඊලඟ ›'
+            first: '« ප්‍රථම'
+            last: 'අන්තිම »'
+          expose:
+            items_per_page_label: 'පිටුවක දිස්‌වන ඒකක'
+      fields:
+        title:
+          label: මාතෘකාව
+        type:
+          label: වර්ගය
+        operations:
+          label: මෙහෙයුම්
+      filters:
+        title:
+          expose:
+            label: මාතෘකාව
+        type:
+          expose:
+            label: වර්ගය

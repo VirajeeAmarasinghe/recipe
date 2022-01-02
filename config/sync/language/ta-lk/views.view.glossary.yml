@@ -1,0 +1,16 @@
+display:
+  default:
+    display_title: பொதுஇருப்பு
+    display_options:
+      fields:
+        title:
+          label: தலைப்பு
+        name:
+          label: எழுத்தாளர்
+        changed:
+          label: 'இறுதி இற்றைப்படுத்தல்'
+      exposed_form:
+        options:
+          reset_button_label: மீளமைக்க
+  page_1:
+    display_title: பக்கம்

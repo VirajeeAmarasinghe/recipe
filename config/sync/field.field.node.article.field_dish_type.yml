@@ -1,0 +1,29 @@
+uuid: 62c9fc0b-5c14-4d6b-b84e-13766ebe1cb1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dish_type
+    - node.type.article
+    - taxonomy.vocabulary.dish_type
+id: node.article.field_dish_type
+field_name: field_dish_type
+entity_type: node
+bundle: article
+label: 'Dish Type'
+description: 'Dish Type'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      dish_type: dish_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

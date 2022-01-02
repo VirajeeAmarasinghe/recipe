@@ -1,0 +1,29 @@
+uuid: de9e6427-ae44-4d55-8d60-32662921bb10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.rss_field.body
+    - node.type.rss_field
+  module:
+    - text
+    - user
+id: node.rss_field.default
+targetEntityType: node
+bundle: rss_field
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

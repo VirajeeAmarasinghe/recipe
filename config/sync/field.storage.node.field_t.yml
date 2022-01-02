@@ -1,0 +1,23 @@
+uuid: daecd737-4039-4d58-a887-f67a92ad0da4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - time_picker
+id: node.field_t
+field_name: field_t
+entity_type: node
+type: time_picker
+settings:
+  time_picker_theme: theme_default
+  hour_format: 24h
+  is_ascii: false
+  case_sensitive: false
+module: time_picker
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

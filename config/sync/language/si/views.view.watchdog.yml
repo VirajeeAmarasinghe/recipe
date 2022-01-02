@@ -1,0 +1,20 @@
+display:
+  default:
+    display_options:
+      fields:
+        type:
+          label: වර්ගය
+        timestamp:
+          label: දිනය
+        name:
+          label: 'පාවිච්චි කරන්නා'
+        link:
+          label: මෙහෙයුම්
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'පිටුවක දිස්‌වන ඒකක'
+      filters:
+        type:
+          expose:
+            label: වර්ගය

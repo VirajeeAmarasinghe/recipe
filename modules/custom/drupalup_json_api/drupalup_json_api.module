@@ -1,0 +1,12 @@
+<?php
+/**
+ * Implements hook_theme().
+ */
+function drupalup_json_api_theme() {
+  return [
+    'photos_theme' => [
+        'variables' => [],
+    ],
+  ];
+}
+?>

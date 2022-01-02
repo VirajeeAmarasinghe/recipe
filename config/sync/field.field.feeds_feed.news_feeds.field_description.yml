@@ -1,0 +1,23 @@
+uuid: 6ad7df37-df65-4e09-a8f6-5f12f7259591
+langcode: en
+status: true
+dependencies:
+  config:
+    - feeds.feed_type.news_feeds
+    - field.storage.feeds_feed.field_description
+  module:
+    - text
+id: feeds_feed.news_feeds.field_description
+field_name: field_description
+entity_type: feeds_feed
+bundle: news_feeds
+label: description
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

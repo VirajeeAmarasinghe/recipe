@@ -1,0 +1,21 @@
+uuid: 3bf1e484-5b59-4746-8885-acb19a034422
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.newsapi
+  module:
+    - text
+id: node.newsapi.field_content
+field_name: field_content
+entity_type: node
+bundle: newsapi
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

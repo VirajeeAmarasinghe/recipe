@@ -1,0 +1,29 @@
+uuid: 54f17af0-9e97-49fd-8ce7-401bf7583dff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cooking_style
+    - node.type.article
+    - taxonomy.vocabulary.cooking_style
+id: node.article.field_cooking_style
+field_name: field_cooking_style
+entity_type: node
+bundle: article
+label: 'Cooking Style'
+description: 'Cooking Style'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cooking_style: cooking_style
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

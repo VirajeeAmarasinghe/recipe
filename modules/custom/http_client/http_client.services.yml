@@ -1,0 +1,7 @@
+services:
+  http_custom_client:
+    class: Drupal\http_client\HttpClient
+    arguments: ['@http_client_factory', '%base_uri%']
+
+parameters:
+  base_uri: ''

@@ -1,0 +1,52 @@
+label: குறிப்புரைகள்
+display:
+  default:
+    display_title: பொதுஇருப்பு
+    display_options:
+      title: குறிப்புரைகள்
+      fields:
+        subject:
+          label: பொருள்
+        name:
+          label: எழுத்தாளர்
+        operations:
+          label: செயல்பாடுகள்
+      pager:
+        options:
+          tags:
+            next: 'அடுத்தது >'
+            previous: '< முன்'
+            first: '<< தொடக்கம்'
+            last: 'முடிவு >>'
+      exposed_form:
+        options:
+          submit_button: வடிகட்டி
+          reset_button_label: மீளமைக்க
+      filters:
+        subject:
+          expose:
+            label: பொருள்
+        langcode:
+          expose:
+            label: மொழி
+      use_more_text: மேலும்
+  page_published:
+    display_options:
+      menu:
+        title: குறிப்புரைகள்
+  page_unapproved:
+    display_options:
+      fields:
+        subject:
+          label: பொருள்
+        name:
+          label: எழுத்தாளர்
+        operations:
+          label: செயல்பாடுகள்
+      filters:
+        subject:
+          expose:
+            label: பொருள்
+        langcode:
+          expose:
+            label: மொழி

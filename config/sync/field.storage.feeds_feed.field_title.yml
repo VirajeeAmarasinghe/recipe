@@ -1,0 +1,19 @@
+uuid: ac86869d-d6c8-4563-af13-10f6c16e91ab
+langcode: en
+status: true
+dependencies:
+  module:
+    - feeds
+    - text
+id: feeds_feed.field_title
+field_name: field_title
+entity_type: feeds_feed
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

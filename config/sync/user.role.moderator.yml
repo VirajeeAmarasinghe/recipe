@@ -1,0 +1,40 @@
+uuid: 7e8ab0c0-c8d2-42ee-b15f-94673da20d25
+langcode: en
+status: true
+dependencies: {  }
+id: moderator
+label: Moderator
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content'
+  - 'access content overview'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'access toolbar'
+  - 'administer content types'
+  - 'administer menu'
+  - 'administer modules'
+  - 'administer node display'
+  - 'administer node fields'
+  - 'administer node form display'
+  - 'administer nodes'
+  - 'administer site configuration'
+  - 'administer software updates'
+  - 'administer themes'
+  - 'administer views'
+  - 'create event content'
+  - 'create terms in event_type'
+  - 'delete any event content'
+  - 'delete event revisions'
+  - 'delete own event content'
+  - 'delete terms in event_type'
+  - 'edit any event content'
+  - 'edit own event content'
+  - 'edit terms in event_type'
+  - 'link to any page'
+  - 'revert event revisions'
+  - 'view event revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'

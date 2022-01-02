@@ -1,0 +1,30 @@
+display:
+  default:
+    display_title: பொதுஇருப்பு
+    display_options:
+      fields:
+        status:
+          label: நிலை
+          settings:
+            format_custom_true: இயங்கும்
+        roles_target_id:
+          label: பாத்திரங்கள்
+        operations:
+          label: செயல்பாடுகள்
+      exposed_form:
+        options:
+          submit_button: வடிகட்டி
+          reset_button_label: மீளமைக்க
+      filters:
+        status:
+          group_info:
+            label: நிலை
+            group_items:
+              1:
+                title: இயங்கும்
+      use_more_text: மேலும்
+  page_1:
+    display_title: பக்கம்
+    display_options:
+      menu:
+        title: பட்டியல்

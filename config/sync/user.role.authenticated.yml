@@ -1,0 +1,14 @@
+uuid: b08a3682-d8ff-4a80-8e40-b9e0e3399a5f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'edit own comments'
+  - 'post comments'

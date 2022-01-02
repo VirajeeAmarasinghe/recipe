@@ -1,0 +1,20 @@
+uuid: 19a046b9-9a5b-4747-873a-24c7a1b747cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.testing-new
+  module:
+    - path
+id: taxonomy_term.testing-new.path
+field_name: path
+entity_type: taxonomy_term
+bundle: testing-new
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

@@ -1,0 +1,19 @@
+uuid: 3381f10b-7df2-4f76-81a7-98e565bdc442
+langcode: en
+status: true
+dependencies:
+  module:
+    - feeds
+    - link
+id: feeds_feed.field_urltoimage
+field_name: field_urltoimage
+entity_type: feeds_feed
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

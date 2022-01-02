@@ -1,0 +1,29 @@
+uuid: ec1f709f-2119-4849-a1b8-16bc5874d7ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_diet_health
+    - node.type.article
+    - taxonomy.vocabulary.diet_health
+id: node.article.field_diet_health
+field_name: field_diet_health
+entity_type: node
+bundle: article
+label: 'Diet & Health'
+description: 'Diet & Health'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      diet_health: diet_health
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

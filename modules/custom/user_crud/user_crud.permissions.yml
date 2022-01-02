@@ -1,0 +1,5 @@
+create update user_crud content:
+  title: 'Create Update User CRUD Content'
+delete user_crud content:
+  title: 'Delete User CRUD Content'
+

@@ -1,0 +1,21 @@
+display:
+  default:
+    display_title: 'Par défaut'
+    display_options:
+      title: 'Utilisateurs en ligne'
+      exposed_form:
+        options:
+          submit_button: Appliquer
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      filters:
+        access:
+          expose:
+            label: 'Dernier accès'
+            description: 'Durée pendant laquelle on considère qu''un utilisateur est en ligne après qu''il ait vu une page pour la dernière fois.'
+  who_s_online_block:
+    display_title: 'Utilisateurs en ligne'
+    display_options:
+      block_description: 'Utilisateurs en ligne'

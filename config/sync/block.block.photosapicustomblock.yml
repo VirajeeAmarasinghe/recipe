@@ -1,0 +1,25 @@
+uuid: f56b927d-76a1-4559-9dea-c0ba9409fe08
+langcode: en
+status: true
+dependencies:
+  module:
+    - drupalup_json_api
+    - system
+  theme:
+    - bartik
+id: photosapicustomblock
+theme: bartik
+region: content
+weight: 0
+provider: null
+plugin: photos_api_block
+settings:
+  id: photos_api_block
+  label: 'Photos API Custom Block'
+  provider: drupalup_json_api
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: /photo-data
+    negate: false

@@ -1,0 +1,22 @@
+uuid: 44c2db06-0808-4ebb-8dac-3840e20a1bfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.spice_indicator
+id: taxonomy_term.spice_indicator.status
+field_name: status
+entity_type: taxonomy_term
+bundle: spice_indicator
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

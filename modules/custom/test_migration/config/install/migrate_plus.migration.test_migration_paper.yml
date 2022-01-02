@@ -1,0 +1,98 @@
+# migration script for the content type
+# id will be uniqued for each yml file and displayed in the migration list
+id: test_migration_paper
+# label will contain description for the migration
+label: 'Migrate Paper data from the xml file'
+# this is the main group that contains all the migrations
+migration_group: test_migration
+# contains all source details for this migration
+source:
+  plugin: url  
+  # Full path to the file
+  data_fetcher_plugin: file
+  data_parser_plugin: xml
+  # contains the file for migration. In this code, source is placed inside the private directory
+  urls: private://xml/session.xml
+  # item selector is the path from which the entire set of data is taken. Basically inside this tag there should be one set of data.
+  item_selector: /program/session/papers/paper 
+  # here we are assigning tag values to some variables
+  fields:
+    # name: which gives variable name
+    - name: title 
+      # a short description
+      label: 'Paper title'
+      # in which we are telling which tag value should be assigned to the variable
+      selector: papertitle
+    - name: abstract
+      label: 'Paper abstract'
+      selector: abstract 
+    - name: first_name
+      label: 'Author first name'
+      selector: authors/author/name/givenname
+    - name: last_name
+      label: 'Author last name'
+      selector: authors/author/name/surname
+    - name: paper_id
+      label: 'Paper identifier'
+      selector: paperid 
+    - name: session_id
+      label: 'Session identifier'
+      selector: sessionid 
+    - name: start_time
+      label: 'Paper presentation start time'
+      selector: starttime 
+    - name: end_time
+      label: 'Paper presentation end time'
+      selector: endtime 
+    - name: author_name
+      label: 'Author name'
+      selector: authors/author/name/fullname
+    - name: session
+      label: 'Session name'
+      selector: session 
+  # which should be unique for each content
+  ids:
+    session_id:
+      type: string 
+# In which we are mapping variable and field machine names
+process:
+  # Adding the mapping between the fields and the csv columns
+  title:
+    - plugin: skip_on_empty
+      method: process
+      source: title 
+  field_abstract/value: abstract
+  field_abstract/format: 
+    plugin: default_value
+    default_value: "full_html"
+  field_presentation_timing/value:
+    plugin: format_date
+    from_format: 'Y-m-d\TH:i:s'
+    to_format: 'Y-m-d\TH:i:s'
+    source: start_time 
+  field_presentation_timing/end_value:
+    plugin: format_date
+    from_format: 'Y-m-d\TH:i:s'
+    to_format: 'Y-m-d\TH:i:s'
+    source: end_time 
+  field_paper_identifier: paper_id 
+  field_session_identifier: session_id
+  field_author: 
+    - plugin: skip_on_empty
+      method: process
+      source: author_name
+    - plugin: paper_user_migration_import_process
+      no_stub: true 
+  field_session:
+    - plugin: skip_on_empty
+      method: process
+      source: session
+    - plugin: node_migration_import_process
+      no_stub: true 
+# In which we are mentioning the entity name to which data should be migrated.
+destination:
+  plugin: 'entity:node'
+  default_bundle: paper
+migration_dependencies:
+  required: {}
+dependencies: {}

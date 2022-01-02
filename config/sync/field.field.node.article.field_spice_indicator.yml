@@ -1,0 +1,29 @@
+uuid: 29ee21cd-7f03-4d96-9978-e10f8fa1bf84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_spice_indicator
+    - node.type.article
+    - taxonomy.vocabulary.spice_indicator
+id: node.article.field_spice_indicator
+field_name: field_spice_indicator
+entity_type: node
+bundle: article
+label: 'Spice Indicator'
+description: 'Spice Indicator'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      spice_indicator: spice_indicator
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

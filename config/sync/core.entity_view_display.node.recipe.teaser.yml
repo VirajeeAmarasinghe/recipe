@@ -1,0 +1,76 @@
+uuid: ebb19d88-41ef-4c91-8976-d7643216f318
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.recipe.body
+    - field.field.node.recipe.comment
+    - field.field.node.recipe.field_calories
+    - field.field.node.recipe.field_contributed_by
+    - field.field.node.recipe.field_cooking_style
+    - field.field.node.recipe.field_footnotes
+    - field.field.node.recipe.field_image
+    - field.field.node.recipe.field_ingredients
+    - field.field.node.recipe.field_meal_type
+    - field.field.node.recipe.field_serves
+    - field.field.node.recipe.field_t
+    - field.field.node.recipe.field_tags
+    - image.style.large
+    - node.type.recipe
+  module:
+    - image
+    - user
+id: node.recipe.teaser
+targetEntityType: node
+bundle: recipe
+mode: teaser
+content:
+  field_calories:
+    type: string
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_contributed_by:
+    type: string
+    weight: 0
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      image_style: large
+      image_link: content
+    third_party_settings: {  }
+  field_serves:
+    type: string
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  comment: true
+  field_cooking_style: true
+  field_footnotes: true
+  field_ingredients: true
+  field_meal_type: true
+  field_t: true
+  field_tags: true
+  langcode: true

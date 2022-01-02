@@ -1,0 +1,19 @@
+uuid: 7181d907-09c8-4455-a5c5-dc0722b9a920
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contributed_by
+    - node.type.recipe
+id: node.recipe.field_contributed_by
+field_name: field_contributed_by
+entity_type: node
+bundle: recipe
+label: 'Contributed by'
+description: 'Contributed person'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

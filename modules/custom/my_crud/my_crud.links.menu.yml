@@ -1,0 +1,6 @@
+my_crud.demo:
+  title: 'CRUD'
+  description: 'CRUD Operation'
+  parent: main
+  menu_name: main
+  route_name: my_crud.mycrud_controller_listing

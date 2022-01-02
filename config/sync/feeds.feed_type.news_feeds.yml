@@ -1,0 +1,121 @@
+uuid: 6c4f6d8f-cdf4-40ae-a999-0cc504e056b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.newsapi.body
+    - field.field.node.newsapi.field_author
+    - field.field.node.newsapi.field_content
+    - field.field.node.newsapi.field_path_to_image
+    - node.type.newsapi
+  module:
+    - feeds_ex
+    - node
+label: 'News feeds'
+id: news_feeds
+description: ''
+help: ''
+import_period: 3600
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: false
+  fallback_hub: ''
+  request_timeout: 30
+parser: jsonpath
+parser_configuration:
+  sources:
+    author:
+      value: author
+      label: author
+    content:
+      value: content
+      label: content
+    description:
+      value: description
+      label: description
+    urltoimage:
+      value: urlToImage
+      label: urlToImage
+    title:
+      value: title
+      label: title
+  context:
+    value: '$.articles.*'
+  source_encoding:
+    - auto
+  display_errors: false
+  debug_mode: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: newsapi
+  langcode: en
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: false
+  authorize: true
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  author:
+    value: author
+    label: author
+    machine_name: author
+  content:
+    value: content
+    label: content
+    machine_name: content
+  description:
+    value: description
+    label: description
+    machine_name: description
+  urltoimage:
+    value: urlToImage
+    label: urlToImage
+    machine_name: urltoimage
+  title:
+    value: title
+    label: title
+    machine_name: title
+mappings:
+  -
+    target: field_author
+    map:
+      value: author
+    settings:
+      language: ''
+    unique: {  }
+  -
+    target: field_content
+    map:
+      value: content
+    settings:
+      language: ''
+      format: plain_text
+  -
+    target: body
+    map:
+      value: description
+      summary: ''
+    settings:
+      language: null
+      format: plain_text
+  -
+    target: field_path_to_image
+    map:
+      uri: urltoimage
+      title: ''
+    settings:
+      language: null
+  -
+    target: title
+    map:
+      value: title
+    settings:
+      language: ''
+    unique: {  }

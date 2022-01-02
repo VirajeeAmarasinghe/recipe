@@ -1,0 +1,14 @@
+user_crud.demo:
+  title: 'USER CRUD'
+  description: 'USER CRUD Operation'
+  parent: system.admin_config_development
+  menu_name: admin
+  route_name: user_crud.display_data
+
+user_crud.add.demo:
+  title: 'USER CRUD ADD'
+  description: 'USER CRUD ADD Operation'
+  parent: user_crud.demo
+  menu_name: user_crud.demo
+  route_name: user_crud.add_form
+

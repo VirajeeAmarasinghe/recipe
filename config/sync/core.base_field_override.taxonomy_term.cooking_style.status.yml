@@ -1,0 +1,22 @@
+uuid: 8d5ca79c-5a25-4597-9332-9b947849a01e
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.cooking_style
+id: taxonomy_term.cooking_style.status
+field_name: status
+entity_type: taxonomy_term
+bundle: cooking_style
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

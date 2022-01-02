@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Photos</title>
+        <link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css" />
+    </head>
+    <body>
+        <div>
+            <h2>Photo Details</h2>
+            <table id="table_photos" class="display">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Album ID</th>
+                        <th>Title</th>
+                        <th>URL</th>
+                        <th>Thumbnail URL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  
+        <!-- Datatable plugin JS library file -->
+        <script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });   
+
+                var table = $('#table_photos').DataTable({
+                    processing: true,
+                    serverSide: true,
+                    ajax: window.location.origin+'/drupal-sites/recipe/api/photo-data',
+
+                    columns: [
+                        {data: 'id', name: 'id'},  
+                        {data: 'albumId', name: 'albumId'},
+                        {data: 'title', name: 'title'},
+                        {data: 'url', name: 'url'},
+                        {data: 'thumbnailUrl', name: 'thumbnailUrl'},
+                    ],
+                    "order": [[ 0, "desc" ]],
+                    "scrollX": true,
+                    "autoWidth": true,
+                    "paging": true,
+                    "pageLength": 10
+                });
+
+            });    
+        </script>
+    </body>
+</html>

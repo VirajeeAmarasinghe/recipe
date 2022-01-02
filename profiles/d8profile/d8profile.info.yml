@@ -1,0 +1,52 @@
+name: D8Profile
+type: profile
+description: 'Basic Profile for Recipe'
+core_version_requirement: ^8 || ^9
+#Note:if there are more the none distributions with in the profiles/folder,
+#Drupal8 will auto-select the one whose name goes first alphabethically.
+distribution:
+  name: Recipe Profile
+dependencies:
+  - node
+  - history
+  - block
+  - breakpoint
+  - ckeditor
+  - color
+  - config
+  - comment
+  - contextual
+  - contact
+  - menu_link_content
+  - datetime
+  - block_content
+  - quickedit
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache  
+  - taxonomy
+  - dblog
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file 
+  - rdf
+  - views
+  - views_ui
+  - tour
+  - automated_cron
+  #contrib
+  - admin_toolbar
+# Adding these lines to our .info.yml will only enable these themes, but none of them will be set by default. 
+themes:
+  - bartik
+  - seven 
+
+  
+

@@ -1,0 +1,8 @@
+uuid: cfad9777-4404-4d62-941e-9ca45ee3d5f3
+langcode: en
+status: true
+dependencies: {  }
+name: 'Spice Indicator'
+vid: spice_indicator
+description: 'Spice Indicator'
+weight: 0

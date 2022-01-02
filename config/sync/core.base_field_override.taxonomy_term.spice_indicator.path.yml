@@ -1,0 +1,20 @@
+uuid: 45eb099a-2c29-4b39-8900-e12f8625fab6
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.spice_indicator
+  module:
+    - path
+id: taxonomy_term.spice_indicator.path
+field_name: path
+entity_type: taxonomy_term
+bundle: spice_indicator
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

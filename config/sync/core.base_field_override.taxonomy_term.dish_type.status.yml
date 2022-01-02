@@ -1,0 +1,22 @@
+uuid: c678e20d-5bbb-4e9d-8d3e-912b5e398cd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.dish_type
+id: taxonomy_term.dish_type.status
+field_name: status
+entity_type: taxonomy_term
+bundle: dish_type
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

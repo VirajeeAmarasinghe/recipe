@@ -1,0 +1,18 @@
+uuid: ffaa82ce-7130-4075-9682-eb42acb32051
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'RSS Item'
+type: rss_item
+description: 'Used to save the individual items from the XML feed. '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

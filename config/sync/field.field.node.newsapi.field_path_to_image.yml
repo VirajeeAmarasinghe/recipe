@@ -1,0 +1,23 @@
+uuid: f919815a-38cd-4314-ac2f-37eda9b56168
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_path_to_image
+    - node.type.newsapi
+  module:
+    - link
+id: node.newsapi.field_path_to_image
+field_name: field_path_to_image
+entity_type: node
+bundle: newsapi
+label: 'path to image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

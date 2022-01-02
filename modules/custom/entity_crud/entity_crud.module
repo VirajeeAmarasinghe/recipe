@@ -1,0 +1,21 @@
+/**
+ * Implements hook_entity_info().
+ */
+function entity_crud_entity_info() {
+
+  $info = array();
+
+  $info['entity_crud'] = array(
+    'label' => t('Entity CRUD'),
+    'base table' => 'entity_crud_table',
+    'entity keys' => array(
+      'id' => 'id',
+      'label' => 'name',
+    ),
+    'module' => 'entity_crud',
+    'entity class' => 'Entity',
+    'controller class' => 'EntityAPIController
+  );
+
+  return $info;
+}

@@ -1,0 +1,18 @@
+uuid: a37c3fe2-6e04-44d8-938e-4228cd3cb8aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.diet_health
+id: taxonomy_term.diet_health.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: diet_health
+label: Changed
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

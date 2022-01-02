@@ -1,0 +1,20 @@
+uuid: 47a6e286-9af3-4dc0-bf13-1900fab54ca8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.content_entity_manage_inventory.field_comment
+  module:
+    - manage_inventory
+id: content_entity_manage_inventory.content_entity_manage_inventory.field_comment
+field_name: field_comment
+entity_type: content_entity_manage_inventory
+bundle: content_entity_manage_inventory
+label: Comment
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
